@@ -1,0 +1,45 @@
+pow = {'Wrocław': 293,
+       'Warszawa': 517,
+       'Radom': 112,
+       'Paryż': 105,
+       'Stolec': 1,
+       'Meksyk': 1485,
+       'Sworne Gacie': 2,
+       'Poznań': 262
+       }
+lud = {'Wrocław': 900000,
+       'Warszawa': 1500000,
+       'Poznań': 300000,
+       'Radom': 200000,
+       'Paryż': 2100000,
+       'Stolec': 1100,
+       'Sworne Gacie': 1200,
+       'Meksyk': 9200000,
+       }                    #utworzenie słowników
+miejscowosc = 'Wrocław'
+print(f'''W miejscowości {miejscowosc} 
+mieszka {lud[miejscowosc]} ludzi 
+na powierzchni {pow[miejscowosc]} km kwadratowych.''')
+#printowanie wartości
+for elem in pow:
+    print(elem)
+
+print(pow.values())
+
+for wartosc in pow.values():
+    print(wartosc)
+
+for krotka in pow.items():
+    print(krotka)
+    #print(f'Miasto{krotka[0]}')
+ #inne sposoby na printowanie
+
+ #edytowanie słowników
+pobor = ['Wrocław', 'Cjalis', 'Pipidówa']
+print(lud['Wrocław'])
+
+for elem in lud:
+    if elem in pobor:
+        lud[elem] = lud[elem] - 1000
+    
+print(lud['Wrocław'])
